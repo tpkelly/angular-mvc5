@@ -11,8 +11,8 @@ namespace WebApplication1
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                         "~/Scripts/Angular/angular.js",
                         "~/Scripts/Angular/angular-ui-router.js",
-                        "~/Scripts/Angular/app.js",
-                        "~/Scripts/Angular/Controllers/*.controller.js"
+                        "~/app/app.js",
+                        "~/app/Controllers/*.controller.js"
             ));
         }
     }
