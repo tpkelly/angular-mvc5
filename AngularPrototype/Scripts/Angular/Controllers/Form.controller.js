@@ -3,10 +3,12 @@
 (function () {
     angular
         .module('Prototype')
-        .controller('HomeController', homeController);
+        .controller('FormController', formController);
 
-    function homeController() {
+    function formController() {
         var vm = this;
+
         vm.title = 'Home View';
+        vm.formData = {};
     }
 })();

@@ -2,12 +2,14 @@
 
 (function () {
     angular
-        .module('Prototype', ['ngRoute'])
-        .config(['$routeProvider', routeProvider]);
+        .module('Prototype', ['ui.router'])
+        .config(['$urlRouterProvider', '$stateProvider', routeProvider]);
 
-    function routeProvider($routeProvider) {
-        $routeProvider
-            .when('/home', { templateUrl: '/Partials/Home' })
-            .otherwise({ redirectTo: '/home' });
+    function routeProvider($urlRouterProvider, $stateProvider) {
+        $stateProvider
+            .state('form', { url: '/form', templateUrl: '/Partials/Form' })
+            .state('form.step1', { url: '/step1', templateUrl: '/Partials/Step1' })
+            .state('form.step2', { url: '/step2', templateUrl: '/Partials/Step2' });
+        $urlRouterProvider.otherwise('/form/step1');
     }
 })();

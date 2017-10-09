@@ -1,0 +1,9 @@
+﻿<div ng-controller="FormController as vm">
+    <h1>{{vm.title}}</h1>
+
+    <!-- Insertion point for partials -->
+    <ui-view id="form-views"></ui-view>
+
+    <!-- Debugging printout of form data -->
+    <pre>{{vm.formData}}</pre>
+</div>

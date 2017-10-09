@@ -167,11 +167,13 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\Angular\angular-route.js" />
+    <Content Include="Scripts\Angular\angular-ui-router.js" />
     <Content Include="Scripts\Angular\angular.js" />
     <Content Include="Scripts\Angular\app.js" />
-    <Content Include="Scripts\Angular\Controllers\Home.controller.js" />
+    <Content Include="Scripts\Angular\Controllers\Form.controller.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Partials\Step2.cshtml" />
+    <Content Include="Views\Partials\Step1.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -181,7 +183,7 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Partials\Home.cshtml" />
+    <Content Include="Views\Partials\Form.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
