@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace WebApplication1.Controllers
+namespace AngularPrototype.Controllers
 {
     public class PartialsController : Controller
     {
