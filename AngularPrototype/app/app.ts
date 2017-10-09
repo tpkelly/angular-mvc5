@@ -1,4 +1,5 @@
 ﻿'use strict';
+declare var angular: any; // Stop the compiler complaining about angular, we import it elsewhere
 
 (function () {
     angular
